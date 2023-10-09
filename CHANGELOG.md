@@ -1,3 +1,28 @@
+## [3.1.10](https://github.com/melkortf/tf2-servers/compare/3.1.9...3.1.10) (2023-10-01)
+
+
+### Bug Fixes
+
+* **tf2-competitive, tf2-mge:** update MGEMod to version 3.0.3 ([#115](https://github.com/melkortf/tf2-servers/issues/115)) ([4362c4c](https://github.com/melkortf/tf2-servers/commit/4362c4c123cdb0e38ed09206ffb15e8fc87bcf5c))
+
+## [3.1.9](https://github.com/melkortf/tf2-servers/compare/3.1.8...3.1.9) (2023-09-01)
+
+## [3.1.8](https://github.com/melkortf/tf2-servers/compare/3.1.7...3.1.8) (2023-08-22)
+
+
+### Bug Fixes
+
+* **deps:** update ETF2L.org configs to version 1.0.9 ([#109](https://github.com/melkortf/tf2-servers/issues/109)) ([5985f15](https://github.com/melkortf/tf2-servers/commit/5985f15f0a59df943c168abcbb558ae0e3b54787))
+
+## [3.1.7](https://github.com/melkortf/tf2-servers/compare/3.1.6...3.1.7) (2023-08-08)
+
+
+### Bug Fixes
+
+* **deps:** update ETF2L.org configs to version 1.0.8 ([#108](https://github.com/melkortf/tf2-servers/issues/108)) ([3b5d07e](https://github.com/melkortf/tf2-servers/commit/3b5d07ed68e193674cf3a643168413cdde00a7a8))
+* **deps:** update tf2-comp-fixes to version 1.16.13 ([#107](https://github.com/melkortf/tf2-servers/issues/107)) ([e000395](https://github.com/melkortf/tf2-servers/commit/e000395842ffca746625991567ac5b151faab237))
+* **docs:** fix spelling in readme ([#106](https://github.com/melkortf/tf2-servers/issues/106)) ([da7da07](https://github.com/melkortf/tf2-servers/commit/da7da076f53443766996efeed5a0833fd4b25066))
+
 ## [3.1.6](https://github.com/melkortf/tf2-servers/compare/3.1.5...3.1.6) (2023-08-07)
 
 

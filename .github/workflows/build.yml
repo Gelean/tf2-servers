@@ -21,21 +21,21 @@ jobs:
     steps:
       -
         name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       -
         name: Docker meta
         id: docker_meta
-        uses: docker/metadata-action@v4
+        uses: docker/metadata-action@v5
         with:
           images: ${{ env.REGISTRY }}/melkortf/tf2-base
           tags: type=sha,format=long
       -
         name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v2
+        uses: docker/setup-buildx-action@v3
       -
         name: Build
         id: docker_build
-        uses: docker/build-push-action@v4
+        uses: docker/build-push-action@v5
         with:
           context: ./packages/tf2-base
           tags: ${{ steps.docker_meta.outputs.tags }}
@@ -61,7 +61,7 @@ jobs:
     steps:
       -
         name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - 
         name: Download tf2-base
         uses: actions/download-artifact@v3
@@ -71,7 +71,7 @@ jobs:
       -
         name: Docker meta
         id: docker_meta
-        uses: docker/metadata-action@v4
+        uses: docker/metadata-action@v5
         with:
           images: ${{ env.REGISTRY }}/melkortf/tf2-sourcemod
           tags: type=sha,format=long
@@ -83,7 +83,7 @@ jobs:
       -
         name: Build
         id: docker_build
-        uses: docker/build-push-action@v4
+        uses: docker/build-push-action@v5
         with:
           context: ./packages/tf2-sourcemod
           build-args: |
@@ -110,7 +110,7 @@ jobs:
     steps:
       -
         name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - 
         name: Download tf2-sourcemod
         uses: actions/download-artifact@v3
@@ -120,7 +120,7 @@ jobs:
       -
         name: Docker meta
         id: docker_meta
-        uses: docker/metadata-action@v4
+        uses: docker/metadata-action@v5
         with:
           images: ${{ env.REGISTRY }}/melkortf/tf2-mge
           tags: type=sha,format=long
@@ -132,7 +132,7 @@ jobs:
       -
         name: Build
         id: docker_build
-        uses: docker/build-push-action@v4
+        uses: docker/build-push-action@v5
         with:
           context: ./packages/tf2-mge
           build-args: |
@@ -159,7 +159,7 @@ jobs:
     steps:
       -
         name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - 
         name: Download tf2-sourcemod
         uses: actions/download-artifact@v3
@@ -169,7 +169,7 @@ jobs:
       -
         name: Docker meta
         id: docker_meta
-        uses: docker/metadata-action@v4
+        uses: docker/metadata-action@v5
         with:
           images: ${{ env.REGISTRY }}/melkortf/tf2-competitive
           tags: type=sha,format=long
@@ -181,7 +181,7 @@ jobs:
       -
         name: Build
         id: docker_build
-        uses: docker/build-push-action@v4
+        uses: docker/build-push-action@v5
         with:
           context: ./packages/tf2-competitive
           build-args: |
@@ -208,7 +208,7 @@ jobs:
     steps:
       -
         name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - 
         name: Download tf2-sourcemod
         uses: actions/download-artifact@v3
@@ -218,7 +218,7 @@ jobs:
       -
         name: Docker meta
         id: docker_meta
-        uses: docker/metadata-action@v4
+        uses: docker/metadata-action@v5
         with:
           images: ${{ env.REGISTRY }}/melkortf/tf2-dm
           tags: type=sha,format=long
@@ -230,7 +230,7 @@ jobs:
       -
         name: Build
         id: docker_build
-        uses: docker/build-push-action@v4
+        uses: docker/build-push-action@v5
         with:
           context: ./packages/tf2-dm
           build-args: |
